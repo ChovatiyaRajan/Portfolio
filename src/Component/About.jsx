@@ -9,11 +9,11 @@ const About = () => {
         </h1>
       </div>
 
-      <div className="mt-25 ml-40">
+      <div className="mx-4 md:mt-25 md:ml-20">
         <h2 className="text-2xl font-semibold my-10 oswald-Bold lg:text-6xl">
           Hi! I'm Rajan Chovatiya 👋
         </h2>
-        <p className="text-base md:text-lg lg:w-270">
+        <p className="text-base lg:text-2xl lg:w-270">
           A motivated and enthusiastic frontend developer just starting my
           journey in web development. I’ve built a solid foundation in{" "}
           <span className="font-semibold text-blue-600">HTML</span>,{" "}
