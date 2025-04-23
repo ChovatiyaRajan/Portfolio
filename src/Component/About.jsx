@@ -9,25 +9,19 @@ const About = () => {
         </h1>
       </div>
 
-      <div className="lg:flex justify-end">
-        <div className="mt-20 lg:text-left lg:w-200 text-center">
-          <p className="text-2xl font-medium">
-            Hey! I'm Rajan Chovatiya, a passionate frontend developer based in
-            Khokhadadad. I love transforming complex problems into simple,
-            beautiful, and intuitive designs.
-          </p>
-        </div>
-      </div>
-
-      <div className="lg:flex justify-start">
-        <div className="mt-20 lg:text-left lg:w-200 text-center lg:pl-15">
-          <p className="text-2xl font-medium">
-            As a fresher, I’ve built a solid foundation in HTML, CSS,
-            JavaScript, and React through personal projects, online courses, and
-            lots of practice. I’m passionate about turning ideas into
-            responsive, user-friendly websites and web apps.
-          </p>
-        </div>
+      <div className="mt-25 ml-40">
+        <h2 className="text-2xl font-semibold my-10 oswald-Bold lg:text-6xl">
+          Hi! I'm Rajan Chovatiya 👋
+        </h2>
+        <p className="text-base md:text-lg lg:w-270">
+          A motivated and enthusiastic frontend developer just starting my
+          journey in web development. I’ve built a solid foundation in{" "}
+          <span className="font-semibold text-blue-600">HTML</span>,{" "}
+          <span className="font-semibold text-blue-600">CSS</span>,{" "}
+          <span className="font-semibold text-yellow-500">JavaScript</span>, and{" "}
+          <span className="font-semibold text-cyan-400">React</span> through
+          personal projects and online learning.
+        </p>
       </div>
       <div>
         <h1 className="text-center oswald-Bold lg:text-7xl text-4xl uppercase mt-30">
@@ -73,9 +67,11 @@ const About = () => {
           </p>
         </div>
       </div>
- 
+
       <div className="flex justify-strt mt-35 mb-10 ">
-        <h1 className="oswald-Bold lg:text-8xl uppercase text-6xl">lets work ..</h1>
+        <h1 className="oswald-Bold lg:text-8xl uppercase text-6xl">
+          lets work ..
+        </h1>
       </div>
     </div>
   );
