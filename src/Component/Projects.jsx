@@ -12,7 +12,7 @@ const projects = [
     title: "To-Do List",
     description:
       "A simple yet powerful to-do list built with React Hooks and local storage support. Allows task creation, deletion, and completion toggles.",
-    tech: ["React", "Hooks", "Local Storage"],
+    tech: ["React", "Hooks", "Local Storage","TailWind"],
     link: "https://crud-operation-qjnv.vercel.app/",
   },
   {
