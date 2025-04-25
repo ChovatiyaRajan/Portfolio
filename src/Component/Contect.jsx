@@ -5,7 +5,9 @@ const Contact = () => {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold">Get In Touch</h1>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold">
+          Get In Touch
+        </h1>
         <p className="text-base sm:text-lg mt-4 text-gray-600 max-w-2xl mx-auto">
           Here’s how you can reach me or explore more about what I do.
         </p>
@@ -41,7 +43,10 @@ const Contact = () => {
             href: "https://rajanportfolio-site.vercel.app/",
           },
         ].map((item, i) => (
-          <div key={i} className="flex items-start gap-4 flex-wrap sm:flex-nowrap">
+          <div
+            key={i}
+            className="flex items-start gap-4 flex-wrap sm:flex-nowrap"
+          >
             {item.icon}
             {item.href ? (
               <a
@@ -53,10 +58,17 @@ const Contact = () => {
                 {item.label}
               </a>
             ) : (
-              <span className="text-base sm:text-lg font-medium break-all">{item.label}</span>
+              <span className="text-base sm:text-lg font-medium break-all">
+                {item.label}
+              </span>
             )}
           </div>
         ))}
+      </div>
+      <div className="flex justify-strt mt-35 mb-10 ">
+        <h1 className="oswald-Bold lg:text-8xl uppercase text-6xl">
+          lets work ..
+        </h1>
       </div>
     </div>
   );
