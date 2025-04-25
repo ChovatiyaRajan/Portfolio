@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold oswald-Bold">
           Get In Touch
         </h1>
         <p className="text-base sm:text-lg mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -28,7 +28,7 @@ const Contact = () => {
             label: "Rajkot, Gujarat, India",
           },
           {
-            icon: <Linkedin className="text-blue-600 w-6 h-6 shrink-0" />,
+            icon: <Linkedin className="text-black w-6 h-6 shrink-0" />,
             label: "linkedin.com/in/rajan-chovatiya",
             href: "https://www.linkedin.com/in/rajan-chovatiya-a451a72aa/",
           },

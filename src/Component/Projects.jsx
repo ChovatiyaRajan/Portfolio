@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-6xl font-extrabold">My Projects</h1>
+        <h1 className="text-4xl md:text-6xl font-extrabold oswald-Bold">My Projects</h1>
         <p className="text-base md:text-lg mt-4 text-gray-600 max-w-2xl mx-auto">
           A showcase of some personal projects that reflect my growth, learning
           journey, and passion for frontend development.
