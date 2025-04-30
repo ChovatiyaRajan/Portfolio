@@ -70,7 +70,9 @@ const Home = () => {
 
         {/* Highlights */}
         <div className="mt-20 text-center max-w-3xl mx-auto">
-          <h3 className="text-4xl font-bold mb-6 oswald-Bold">Core Strengths</h3>
+          <h3 className="text-4xl font-bold mb-6 oswald-Bold">
+            Core Strengths
+          </h3>
           <ul className="text-left space-y-4 text-gray-700 text-lg">
             <li>🔗 Strong foundation in HTML, CSS, and JavaScript</li>
             <li>🔗 Built multiple React projects with Hooks and Routing</li>
@@ -91,8 +93,8 @@ const Home = () => {
             View My Projects
           </Link>
         </div>
+        <Timeline />
       </div>
-      <Timeline />
     </>
   );
 };
