@@ -29,6 +29,13 @@ const projects = [
     tech: ["React" , "tailwind"],
     link: "https://calculator-sigma-gules.vercel.app/",
   },
+  {
+    title: "Clock",
+    description:
+      "A clean and responsive calculator built with React to perform basic arithmetic operations. Focused on functional components and state management using React Hooks",
+    tech: ["js" , "css"],
+    link: "https://calculator-sigma-gules.vercel.app/",
+  },
 ];
 
 const Projects = () => {
