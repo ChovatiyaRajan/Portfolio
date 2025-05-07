@@ -26,15 +26,15 @@ const projects = [
     title: "Calculater",
     description:
       "A clean and responsive calculator built with React to perform basic arithmetic operations. Focused on functional components and state management using React Hooks",
-    tech: ["React" , "tailwind"],
+    tech: ["React", "tailwind"],
     link: "https://calculator-sigma-gules.vercel.app/",
   },
   {
-    title: "Clock",
+    title: "Clock App",
     description:
-      "A clean and responsive calculator built with React to perform basic arithmetic operations. Focused on functional components and state management using React Hooks",
-    tech: ["js" , "css"],
-    link: "https://calculator-sigma-gules.vercel.app/",
+      "A simple and responsive digital clock built with JavaScript and CSS. It displays the current time in real-time using JavaScript's Date object, with a clean UI styled using CSS.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    link: "https://clock-js-omega.vercel.app/",
   },
 ];
 
@@ -42,7 +42,9 @@ const Projects = () => {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-16">
-        <h1 className="text-5xl md:text-6xl font-extrabold lg:text-8xl oswald-Bold">My Projects</h1>
+        <h1 className="text-5xl md:text-6xl font-extrabold lg:text-8xl oswald-Bold">
+          My Projects
+        </h1>
         <p className="text-base md:text-lg mt-4 text-gray-600 max-w-2xl mx-auto">
           A showcase of some personal projects that reflect my growth, learning
           journey, and passion for frontend development.
@@ -62,7 +64,7 @@ const Projects = () => {
                   <span
                     key={i}
                     className="bg-black text-white text-xs font-medium px-3 py-1 rounded-full"
-                  >   
+                  >
                     {tech}
                   </span>
                 ))}
