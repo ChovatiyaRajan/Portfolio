@@ -36,6 +36,13 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     link: "https://clock-js-omega.vercel.app/",
   },
+  {
+    title: "Game with React",
+    description:
+      "A fun and interactive Rock-Paper-Scissors game built with React and Tailwind CSS Features real-time score tracking, animated icons, and dynamic gameplay against the computer.",
+    tech: ["React+vite", "tailwind"],
+    link: "https://react-game-ebon.vercel.app/",
+  },
 ];
 
 const Projects = () => {
