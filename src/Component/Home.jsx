@@ -114,7 +114,7 @@ const Home = () => {
             to="/projects"
             className="inline-block bg-black text-white px-6 py-3 rounded-full text-lg hover:bg-gray-800 transition"
           >
-            View My All Projects
+            View My Projects
           </Link>
         </div>
         <Timeline />
