@@ -1,10 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Component/Navbar";
-import Home from "./Component/Home";
-import About from "./Component/About";
-import Projects from "./Component/Projects";
-import Contect from "./Component/Contect";
+import React, { Suspense } from "react";
+
+const Home = React.lazy(() => import("./Component/Home"));
+const About = React.lazy(() => import("./Component/About"));
+const Projects = React.lazy(() => import("./Component/Projects"));
+const Contect = React.lazy(() => import("./Component/Contect"));
 
 function App() {
   return (
@@ -12,10 +14,90 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>
-            <Route index element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contect" element={<Contect />} />
+            <Route
+              index
+              element={
+                <Suspense
+                  fallback={
+                    <div className="flex flex-col items-center justify-center h-screen bg-white">
+                      <div className="flex space-x-2">
+                        <div className="w-4 h-4 bg-[#2b2d42] rounded-full animate-[bounce_0.6s_infinite]"></div>
+                        <div className="w-4 h-4 bg-[#8D99AE] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.15s]"></div>
+                        <div className="w-4 h-4 bg-[#BED6DF] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.3s]"></div>
+                      </div>
+                      <p className="mt-4 text-lg font-medium text-gray-700 animate-pulse">
+                        Loading...
+                      </p>
+                    </div>
+                  }
+                >
+                  <Home />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/about"
+              element={
+                <Suspense
+                  fallback={
+                    <div className="flex flex-col items-center justify-center h-screen bg-white">
+                      <div className="flex space-x-2">
+                        <div className="w-4 h-4 bg-[#2b2d42] rounded-full animate-[bounce_0.6s_infinite]"></div>
+                        <div className="w-4 h-4 bg-[#8D99AE] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.15s]"></div>
+                        <div className="w-4 h-4 bg-[#BED6DF] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.3s]"></div>
+                      </div>
+                      <p className="mt-4 text-lg font-medium text-gray-700 animate-pulse">
+                        Loading...
+                      </p>
+                    </div>
+                  }
+                >
+                  <About />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/projects"
+              element={
+                <Suspense
+                  fallback={
+                    <div className="flex flex-col items-center justify-center h-screen bg-white">
+                      <div className="flex space-x-2">
+                        <div className="w-4 h-4 bg-[#2b2d42] rounded-full animate-[bounce_0.6s_infinite]"></div>
+                        <div className="w-4 h-4 bg-[#8D99AE] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.15s]"></div>
+                        <div className="w-4 h-4 bg-[#BED6DF] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.3s]"></div>
+                      </div>
+                      <p className="mt-4 text-lg font-medium text-gray-700 animate-pulse">
+                        Loading...
+                      </p>
+                    </div>
+                  }
+                >
+                  <Projects />
+                </Suspense>
+              }
+            />
+            <Route
+              path="/contect"
+              element={
+                <Suspense
+                  fallback={
+                    <div className="flex flex-col items-center justify-center h-screen bg-white">
+                      <div className="flex space-x-2">
+                        <div className="w-4 h-4 bg-[#2b2d42] rounded-full animate-[bounce_0.6s_infinite]"></div>
+                        <div className="w-4 h-4 bg-[#8D99AE] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.15s]"></div>
+                        <div className="w-4 h-4 bg-[#BED6DF] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.3s]"></div>
+                      </div>
+                      <p className="mt-4 text-lg font-medium text-gray-700 animate-pulse">
+                        Loading...
+                      </p>
+                    </div>
+                  }
+                >
+                  <Contect />
+                </Suspense>
+              }
+            />
           </Route>
         </Routes>
       </BrowserRouter>

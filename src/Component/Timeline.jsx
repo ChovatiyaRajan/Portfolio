@@ -14,13 +14,6 @@ const timeline = [
     description:
       "Built responsive UI components using React and Tailwind. and gained practical experience.",
   },
-//   {
-//     title: "React Certification",
-//     institution: "Coursera (Meta Front-End Developer)",
-//     date: "Feb 2024",
-//     description:
-//       "Completed hands-on course covering React fundamentals, hooks, and building dynamic UIs.",
-//   },
 ];
 
 const Timeline = () => {
