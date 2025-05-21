@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import rajan from "../Images/portfoliyoo.jpg";
 import Marquee from "react-fast-marquee";
 import html from "../Images/html.png";
@@ -10,6 +10,29 @@ import { Link } from "react-router-dom"; // Optional, for navigation
 import Timeline from "./Timeline";
 
 const Home = () => {
+  const titles = ["Frontend Developer", "React Enthusiast", "Life-long Learner"];
+
+  const [text, setText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+
+  useEffect(() => {
+    const currentPhrase = titles[index];
+    if (charIndex < currentPhrase.length) {
+      const timeout = setTimeout(() => {
+        setText((prev) => prev + currentPhrase[charIndex]);
+        setCharIndex((prev) => prev + 1);
+      }, 100);
+      return () => clearTimeout(timeout);
+    } else {
+      const timeout = setTimeout(() => {
+        setText("");
+        setCharIndex(0);
+        setIndex((prevIndex) => (prevIndex + 1) % titles.length);
+      }, 1500); // Wait before switching
+      return () => clearTimeout(timeout);
+    }
+  }, [charIndex, index]);
   return (
     <>
       <div className="container mx-auto px-4 py-16">
@@ -18,8 +41,9 @@ const Home = () => {
           <h1 className="text-4xl md:text-8xl font-extrabold uppercase oswald-Bold">
             Rajan Chovatiya
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mt-4 font-medium">
-            Frontend Developer • React Enthusiast • Lifelong Learner
+          <p className="text-lg md:text-xl text-gray-600 mt-4 font-medium h-8">
+            {text}
+            <span className="border-r-2 border-black animate-pulse ml-1"></span>
           </p>
         </div>
 
