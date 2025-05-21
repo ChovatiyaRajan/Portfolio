@@ -2,13 +2,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Component/Navbar";
 import React, { Suspense } from "react";
+import Loder from "./utils/Loder";
 
 const Home = React.lazy(() => import("./Component/Home"));
 const About = React.lazy(() => import("./Component/About"));
 const Projects = React.lazy(() => import("./Component/Projects"));
 const Contect = React.lazy(() => import("./Component/Contect"));
 
-function App() {
+const App = () => {
+
   return (
     <div>
       <BrowserRouter>
@@ -17,41 +19,15 @@ function App() {
             <Route
               index
               element={
-                <Suspense
-                  fallback={
-                    <div className="flex flex-col items-center justify-center h-screen bg-white">
-                      <div className="flex space-x-2">
-                        <div className="w-4 h-4 bg-[#2b2d42] rounded-full animate-[bounce_0.6s_infinite]"></div>
-                        <div className="w-4 h-4 bg-[#8D99AE] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.15s]"></div>
-                        <div className="w-4 h-4 bg-[#BED6DF] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.3s]"></div>
-                      </div>
-                      <p className="mt-4 text-lg font-medium text-gray-700 animate-pulse">
-                        Loading...
-                      </p>
-                    </div>
-                  }
-                >
+                <Suspense fallback={<Loder />}>
                   <Home />
                 </Suspense>
               }
             />
             <Route
-              path="/about"
+              path="/a}bout"
               element={
-                <Suspense
-                  fallback={
-                    <div className="flex flex-col items-center justify-center h-screen bg-white">
-                      <div className="flex space-x-2">
-                        <div className="w-4 h-4 bg-[#2b2d42] rounded-full animate-[bounce_0.6s_infinite]"></div>
-                        <div className="w-4 h-4 bg-[#8D99AE] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.15s]"></div>
-                        <div className="w-4 h-4 bg-[#BED6DF] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.3s]"></div>
-                      </div>
-                      <p className="mt-4 text-lg font-medium text-gray-700 animate-pulse">
-                        Loading...
-                      </p>
-                    </div>
-                  }
-                >
+                <Suspense fallback={<Loder />}>
                   <About />
                 </Suspense>
               }
@@ -59,20 +35,7 @@ function App() {
             <Route
               path="/projects"
               element={
-                <Suspense
-                  fallback={
-                    <div className="flex flex-col items-center justify-center h-screen bg-white">
-                      <div className="flex space-x-2">
-                        <div className="w-4 h-4 bg-[#2b2d42] rounded-full animate-[bounce_0.6s_infinite]"></div>
-                        <div className="w-4 h-4 bg-[#8D99AE] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.15s]"></div>
-                        <div className="w-4 h-4 bg-[#BED6DF] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.3s]"></div>
-                      </div>
-                      <p className="mt-4 text-lg font-medium text-gray-700 animate-pulse">
-                        Loading...
-                      </p>
-                    </div>
-                  }
-                >
+                <Suspense fallback={<Loder />}>
                   <Projects />
                 </Suspense>
               }
@@ -80,20 +43,7 @@ function App() {
             <Route
               path="/contect"
               element={
-                <Suspense
-                  fallback={
-                    <div className="flex flex-col items-center justify-center h-screen bg-white">
-                      <div className="flex space-x-2">
-                        <div className="w-4 h-4 bg-[#2b2d42] rounded-full animate-[bounce_0.6s_infinite]"></div>
-                        <div className="w-4 h-4 bg-[#8D99AE] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.15s]"></div>
-                        <div className="w-4 h-4 bg-[#BED6DF] rounded-full animate-[bounce_0.6s_infinite] [animation-delay:-0.3s]"></div>
-                      </div>
-                      <p className="mt-4 text-lg font-medium text-gray-700 animate-pulse">
-                        Loading...
-                      </p>
-                    </div>
-                  }
-                >
+                <Suspense fallback={<Loder />}>
                   <Contect />
                 </Suspense>
               }
@@ -103,6 +53,6 @@ function App() {
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
