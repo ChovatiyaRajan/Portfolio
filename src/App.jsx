@@ -25,7 +25,7 @@ const App = () => {
               }
             />
             <Route
-              path="/a}bout"
+              path="/about"
               element={
                 <Suspense fallback={<Loder />}>
                   <About />
