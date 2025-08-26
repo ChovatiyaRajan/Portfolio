@@ -53,8 +53,9 @@ const Projects = () => {
           My Projects
         </h1>
         <p className="text-base md:text-lg mt-4 text-gray-600 max-w-2xl mx-auto">
-          A showcase of some personal projects that reflect my growth, learning
-          journey, and passion for frontend development.
+          A showcase of personal projects that highlight my growth as a
+          developer, continuous learning journey, and passion for building
+          modern web applications.
         </p>
       </div>
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">

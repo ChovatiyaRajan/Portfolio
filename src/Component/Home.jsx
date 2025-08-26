@@ -15,8 +15,12 @@ import Timeline from "./Timeline";
 
 const Home = () => {
   const titles = [
+    "MERN Stack Developer",
     "Frontend Developer",
-    "React Enthusiast",
+    "React & Tailwind Specialist",
+    "Node.js & Express Developer",
+    "MongoDB Practitioner",
+    "Git & GitHub Contributor",
     "Life-long Learner",
   ];
 
@@ -66,7 +70,7 @@ const Home = () => {
               experience with backend technologies like Node.js, Express, and
               MongoDB, along with version control using Git and GitHub.
               Passionate about writing clean, maintainable code and solving
-              real-world problems through design and development. 
+              real-world problems through design and development.
             </p>
           </div>
 
