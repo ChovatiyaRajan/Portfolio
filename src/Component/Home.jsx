@@ -6,11 +6,19 @@ import css from "../Images/css.png";
 import js from "../Images/js.png";
 import bootstrap from "../Images/bootstarp.png";
 import react from "../Images/react.png";
+import tailLogo from "../Images/tailLogo.png";
+import nodeLogo from "../Images/nodeLogo.png";
+// import mogoDBLogo from "../Images/mogoDBLogo.png";
+import expressLogo from "../Images/expressLogo.png";
 import { Link } from "react-router-dom"; // Optional, for navigation
 import Timeline from "./Timeline";
 
 const Home = () => {
-  const titles = ["Frontend Developer", "React Enthusiast", "Life-long Learner"];
+  const titles = [
+    "Frontend Developer",
+    "React Enthusiast",
+    "Life-long Learner",
+  ];
 
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
@@ -52,10 +60,13 @@ const Home = () => {
           <div className="text-center px-4">
             <h2 className="text-2xl font-semibold mb-3">Who Am I?</h2>
             <p className="text-base md:text-lg">
-              A fresher with a solid foundation in frontend technologies,
-              passionate about building intuitive and interactive web apps. I
-              love writing clean code and solving real-world problems through
-              design.
+              A fresher with a strong foundation in web development, skilled in
+              building responsive and interactive applications using React,
+              Tailwind CSS, and modern JavaScript. I have also gained hands-on
+              experience with backend technologies like Node.js, Express, and
+              MongoDB, along with version control using Git and GitHub.
+              Passionate about writing clean, maintainable code and solving
+              real-world problems through design and development. 
             </p>
           </div>
 
@@ -74,6 +85,15 @@ const Home = () => {
               Tailwind CSS, and modern JavaScript tools. Always focused on
               usability, performance, and accessibility.
             </p>
+            <p className="mt-3">
+              <span className="text-2xl text-gray-700 font-bold">
+                On the backend,
+              </span>{" "}
+              I work with Node.js, Express, and MongoDB to build scalable
+              server-side applications. I also use Git & GitHub for version
+              control and follow REST API principles to connect frontend and
+              backend efficiently.
+            </p>
           </div>
         </div>
 
@@ -81,13 +101,45 @@ const Home = () => {
           <div className="text-4xl md:text-5xl font-bold oswald-Bold">
             <p>Languages & Tools I Use:</p>
           </div>
-          <Marquee speed="40">
-            <div className="flex items-center gap-16 mt-8">
-              <img src={html} alt="HTML" className="w-50" />
-              <img src={css} alt="CSS" className="w-36" />
-              <img src={js} alt="JS" className="w-36" />
-              <img src={bootstrap} alt="Bootstrap" className="w-36" />
-              <img src={react} alt="React" className="w-36" />
+          <Marquee speed={30} gradient={false}>
+            <div className="flex items-center gap-10 sm:gap-12 md:gap-16 mt-8">
+              <img
+                src={react}
+                alt="React"
+                className="w-16 sm:w-20 md:w-28 lg:w-36"
+              />
+              <img src={js} alt="JS" className="w-16 sm:w-20 md:w-28 lg:w-36" />
+              <img
+                src={html}
+                alt="HTML"
+                className="w-16 sm:w-20 md:w-28 lg:w-36"
+              />
+              <img
+                src={css}
+                alt="CSS"
+                className="w-16 sm:w-20 md:w-28 lg:w-36"
+              />
+              <img
+                src={tailLogo}
+                alt="Tailwind"
+                className="w-16 sm:w-20 md:w-28 lg:w-36"
+              />
+              <img
+                src={nodeLogo}
+                alt="nodeJS"
+                className="w-16 sm:w-20 md:w-28 lg:w-36"
+              />
+              <img
+                src={expressLogo}
+                alt="ExpressJS"
+                className="w-16 sm:w-20 md:w-28 lg:w-36"
+              />
+
+              <img
+                // src={mogoDBLogo}
+                alt="MongoDB"
+                className="w-16 sm:w-20 md:w-28 lg:w-36"
+              />
             </div>
           </Marquee>
         </div>

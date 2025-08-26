@@ -13,14 +13,27 @@ const About = () => {
         <h2 className="text-2xl font-semibold my-10 oswald-Bold lg:text-6xl">
           Hi! I'm Rajan Chovatiya 👋
         </h2>
-        <p className="text-base lg:text-2xl lg:w-270">
-          A motivated and enthusiastic frontend developer just starting my
-          journey in web development. I’ve built a solid foundation in{" "}
-          <span className="font-semibold text-blue-600">HTML</span>,{" "}
-          <span className="font-semibold text-blue-600">CSS</span>,{" "}
-          <span className="font-semibold text-yellow-500">JavaScript</span>, and{" "}
-          <span className="font-semibold text-cyan-400">React</span> through
-          personal projects and online learning.
+        <p className="text-gray-700 text-base sm:text-2xl leading-relaxed">
+          I’m a passionate <span className="font-semibold">web developer</span>{" "}
+          with a solid foundation in{" "}
+          <span className="text-blue-600 font-medium">
+            HTML, CSS, JavaScript, and React
+          </span>
+          . Recently, I’ve expanded into
+          <span className="text-green-600 font-medium">
+            {" "}
+            Node.js, Express, MongoDB
+          </span>
+          , along with{" "}
+          <span className="text-purple-600 font-medium">
+            Git/GitHub and REST APIs
+          </span>
+          , building full-stack applications through projects and continuous
+          learning. I enjoy turning ideas into{" "}
+          <span className="font-semibold">
+            clean, responsive, and user-friendly experiences
+          </span>
+          .
         </p>
       </div>
       <div>
@@ -31,10 +44,12 @@ const About = () => {
       <div className="lg:flex justify-center">
         <div className="mt-20 lg:text-left lg:w-270 text-center lg:pl-15">
           <p className="text-2xl font-medium px-3">
-            My interest in technology and problem-solving led me to web
-            development. I enjoy learning new tools, experimenting with code,
-            and seeing my designs come to life in the browser. Every project, no
-            matter how small, is a step forward in my learning path.
+            My curiosity for technology and problem-solving sparked my journey
+            into web development. Over time, I’ve built projects that allowed me
+            to explore both frontend and backend development, experiment with
+            modern tools, and bring my designs to life in the browser. Every
+            project, whether big or small, has been a step forward in sharpening
+            my skills and deepening my learning.
           </p>
         </div>
       </div>
@@ -46,10 +61,11 @@ const About = () => {
       <div className="lg:flex justify-end mb-10">
         <div className="mt-20 lg:text-left lg:w-200 px-3 text-center lg:pl-15">
           <p className="text-2xl font-medium">
-            I’m currently looking for opportunities where I can apply what I’ve
-            learned, contribute to real-world projects, and grow alongside
-            experienced developers. I’m eager to keep learning, improve my
-            skills, and become a valuable part of a development team.
+            I’m eager to join a team where I can apply my skills in real-world
+            projects, contribute meaningfully, and continue learning from
+            experienced developers. My goal is to grow into a full-stack
+            developer while building impactful applications that solve real
+            problems.
           </p>
         </div>
       </div>
@@ -61,9 +77,10 @@ const About = () => {
       <div className="lg:flex justify-start mb-10">
         <div className="mt-20 lg:text-left lg: text-center lg:px-15">
           <p className="text-2xl font-medium px-3">
-            I’d love to collaborate on projects, get feedback, or just chat
-            about tech and coding. Feel free to reach out — I’m always open to
-            new connections and opportunities!
+            I’d love to collaborate on projects, share ideas, or just chat about
+            tech and coding. If you’re looking for someone who’s motivated,
+            quick to learn, and excited about building great web experiences —
+            let’s work together! 🚀
           </p>
         </div>
       </div>
